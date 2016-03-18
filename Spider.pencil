@@ -1,12 +1,12 @@
-speed 12
+speed 10
 spider = new Sprite
-  height: 80
-  width: 80
+  height: 60
+  width: 60
 
 # Draw the spider. 
 drawon spider
-fd 50
-dot darkslategrey, 20
+fd 10
+dot darkslategray, 20
 
 
 # sync makes the spider wait
@@ -14,4 +14,6 @@ dot darkslategrey, 20
 sync spider, turtle
 
 spider
-
+for [1..0]
+  spider.fd 100
+  spider.rt 100
